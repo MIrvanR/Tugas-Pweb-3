@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="list.png" alt="checklist"></h2>
+            <div class="input-container">
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Apa yang harus dilakukan..">
+                </div>
+                <button id="add-btn">
+                    <img src="plus.png" alt="add" width="30">
+                </button>
+            </div>
+            <ul id="list-container"></ul>
+        </div>
+    </div>
+    <div id="notification" class="hidden"></div>
+
+<div id="edit-modal" class="modal">
+    <div class="modal-content">
+        <h3>Edit Tugas</h3>
+        <input type="text" id="edit-input">
+        <div class="modal-buttons">
+            <button id="save-edit">Simpan</button>
+            <button id="cancel-edit">Batal</button>
+        </div>
+    </div>
+</div>
+
+
+<div id="delete-modal" class="modal">
+    <div class="modal-content">
+        <h3>Hapus Tugas?</h3>
+        <p>Yakin mau hapus?</p>
+        <div class="modal-buttons">
+            <button id="confirm-delete">Hapus</button>
+            <button id="cancel-delete">Batal</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
